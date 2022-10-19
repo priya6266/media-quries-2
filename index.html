@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+    <style>
+        @media only screen and (min-width:0px) and (max-width:575px)
+        {
+          .xs{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+
+          }
+        }
+        @media only screen and (min-width:576px) and (max-width:767px)
+        {
+            .md{
+                width:500px;
+                height:500px;
+                background-color: green;
+                border-radius: 500px;
+            }
+            div.d-md-none{
+                display:none;
+            }
+
+        }
+        @media only screen and (min-width:768px) and (max-width:991px)
+        { 
+          .lg{
+            width: 600px;
+            height: 200px;
+            background-color: aqua;
+
+          }
+
+        }
+        @media only screen and (min-width:992px) and (max-width:1199px)
+        {
+           .xl{
+            width:100px;
+            height: 700px;
+            background-color: black;
+           }
+           div.d-xl-none{
+            display:none;
+           }
+
+        }
+        @media only screen and (min-width:1200px) and ( max-width:1399px)
+        {
+           .xll{
+            width:600px;
+            height: 600px;
+            border-radius: 600px;
+            background-color: blue;
+           }
+        }
+        @media only screen and ( min-width:1400px)
+        {
+          .xxl{
+            width: 100%;
+            height: 100px;
+            background-color: chocolate;
+          }
+          div.d-xxl-none{
+            display:none;
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="xs md d-md-none lg xl d-xl-none xll xxl d-xxl-none"></div>
+</body>
+</html>
